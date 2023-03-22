@@ -1,0 +1,186 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    list-style: none; 
+    box-sizing: border-box; 
+} 
+body { 
+    background-image: url(./img/The_Office_FNaF_Infobox.webp); 
+    height: 100vh; 
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.title__fnaf { 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column-reverse; 
+    align-items: center; 
+    animation: shake 1s ease-in-out infinite; 
+    position: relative;
+} 
+.title__fnaf img{
+    position: relative;
+    width: 300px;
+}
+@keyframes shake { 
+    0% { 
+    transform: translateX(0); 
+    } 
+    25% { 
+    transform: translateX(-5px); 
+    } 
+    50% { 
+    transform: translateX(5px); 
+    } 
+    75% { 
+    transform: translateX(-5px); 
+    } 
+    100% { 
+    transform: translateX(0); 
+    } 
+} 
+.fnaf__person { 
+    position: relative; 
+    transition: 0.3s; 
+    top: 20px;
+} 
+.person_1 img { 
+    position: absolute; 
+    width: 30%; 
+    left: -1%; 
+    animation-name: slide-on; 
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards;
+} 
+
+@keyframes slide-on { 
+    0% { 
+    transform: translateX(-100%); 
+    } 
+    100% { 
+    transform: translateX(0%); 
+    } 
+} 
+.person__2 img { 
+    position: absolute; 
+    width: 400px; 
+    left: 70%; 
+    right: -100%; 
+    animation-name: slide-in; 
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards; 
+    right: 0; 
+} 
+@keyframes slide-in { 
+    0% { 
+    transform: translateX(100%); 
+    } 
+    100% { 
+    transform: translateX(0%); 
+    } 
+} 
+.person__3 { 
+    animation: anima 1s linear infinite alternate; 
+} 
+@keyframes anima { 
+    0% { 
+    transform: scale(1.04); 
+    } 
+    100% { 
+    transform: scale(0.99); 
+    } 
+} 
+.person__3 img { 
+    position: absolute; 
+    width: 30%; 
+    left: 40%;
+    top: 150px; 
+    animation: rotate-2 2s linear forwards; 
+} 
+@keyframes rotate-2 { 
+    0% { 
+    transform: rotate(0deg); 
+    } 
+    100% { 
+    transform: rotate(-360deg); 
+    } 
+} 
+.person__4 { 
+    animation: anima 1s linear infinite alternate; 
+} 
+@keyframes anima { 
+    0% { 
+    transform: scale(1.02); 
+    } 
+    100% { 
+    transform: scale(0.99); 
+    } 
+} 
+.person__4 img { 
+    position: absolute; 
+    width: 400px; 
+    left: 20%; 
+    animation: rotate 2s linear forwards; 
+} 
+@keyframes rotate { 
+    0% { 
+    transform: rotate(0deg); 
+    } 
+    100% { 
+    transform: rotate(360deg); 
+    } 
+} 
+.element__block { 
+    position: absolute; 
+    width: 30%; 
+} 
+.element-1 { 
+    position: absolute; 
+    width: 30%; 
+} 
+.elemtnt-2 { 
+    position: absolute; 
+    width: 30%; 
+}
+.person-modal{
+    opacity: 0;
+    transition: 0.2s;
+}
+.person_1:active .person-modal{
+    opacity: 1;
+    width: 1600px;
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+}
+.person__2:active .person-modal{
+    opacity: 1;
+    width: 1700px;
+    position: absolute;
+    top: -170px;
+    z-index: 1;
+    left: 10px;
+}
+.person__3:active .person-modal{
+    opacity: 1;
+    width: 1500px;
+    position: absolute;
+    top: -170px;
+    z-index: 1;
+    left: 10px;
+}
+
+.person__4:active .person-modal{
+    opacity: 1;
+    width: 1700px;
+    position: absolute;
+    top: -170px;
+    z-index: 1;
+    left: 10px;
+}
